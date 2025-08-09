@@ -128,8 +128,7 @@
       font-weight: bold;
     }
 
-    /* Music button styling */
-
+   
 
     .refresh-btn {
       background: #2196f3;
@@ -1343,6 +1342,29 @@
       // General health responses
       if (message.includes('health') || message.includes('wellness')) {
         return "Maintaining good health involves regular exercise, balanced nutrition, adequate sleep, and stress management. For allergy sufferers, this also includes monitoring environmental triggers and following prescribed treatments.";
+      }
+      
+      // Pollen type facts
+      if (message.includes('birch')) {
+        return "Birch pollen is a pollen found in birch trees, which typically releases pollen in the spring. It is a common allergen in many regions and can cause symptoms like sneezing, runny nose, and itchy eyes.";
+      }
+      if (message.includes('alder')) {
+        return "Alder pollen is a pollen found in alder trees,which like all the other pollens listed on this site are located in North America. It is a common allergen in the spring and can cause allergic reactions .";
+      }
+      if (message.includes('grass')) {
+        return "Grass pollen is a very common allergen found in grass and is a major cause of hay fever, symptoms often peaking in the spring and summer.";
+      }
+      if (message.includes('mugwort')) {
+        return "Mugwort pollen is a weed pollen that can cause allergic reactions, particularly in the late summer and early fall. Some studies suggest that it can also be associated with oral allergy syndrome or OAS.";
+      }
+      if (message.includes('olive')) {
+        return "Olive pollen is produced by olive trees.The pollens contain proteins that can trigger allergic reactions in sensitive individuals, particularly in Mediterranean regions during the spring.";
+      }
+      if (message.includes('ragweed')) {
+        return "Ragweed pollen is a powdery substance released by ragweed plants, they are found in the late summary to early fall.Especially in North America, and can cause severe allergic reactions during the late summer and fall.";
+      }
+      if (message.includes('manage') || message.includes('managing') || message.includes('control') || message.includes('deal with') || message.includes('treat') && message.includes('pollen')) {
+        return "To manage pollen allergies: Monitor pollen counts and limit outdoor activities during peak times. Keep windows closed and use air conditioning or air purifiers. Wear a mask, sunglasses, and a hat outdoors. Shower before bed, wash hair and clothes after being outside, and keep bedding clean. Antihistamines and decongestants can help manage symptoms. Allergy shots (immunotherapy) may be an effective long-term solution. Be aware of potential cross-reactivity between pollens and certain foods, especially for oral allergy syndrome (OAS).";
       }
       
       // Default response for unrecognized queries
